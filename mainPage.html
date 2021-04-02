@@ -3,14 +3,19 @@
     <head>
         <title>TrackYourTime</title>
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
         <script type="text/javascript" src="stopwatchForMainPage.js"></script> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
     </head>
-    <body>
+    <body onload="stopwatch()">
+        <video autoplay muted loop id="purpleSeaVideo">
+            <source src="backgroundPurpleSea.mp4" type="video/mp4">
+        </video>
         <h1>Track Your Time</h1>
         <p id="stopwatch"></p>
         <br>
         <br>
-        <button onclick="document.location='signUp.html'">Sign Up</button>
+        <button id="signUpButton" onclick="document.location='signUp.html'">Sign Up</button>
         <br>
         <button onclick="document.location='trackerPage.html'">Log in</button>
 

@@ -1,14 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
 body {
-    background-color: #262626;
+    
 }
 
 h1 {
-    font-size: 40pt;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 50pt;
+    font-family: "Bangers", serif;
     text-align: center;
-    color: #000099;
+    color: #ff80ff;
+    position: fixed;
+    left: 450px;
 }
 
 #stopwatch {
-    color: #000099;
+    color: #ffccff;
+    font-size: 60px;
+    text-align: center;
+    position: fixed;
+    left: 475px;
+    top: 100px;
+}
+
+#purpleSeaVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
