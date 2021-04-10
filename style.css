@@ -1,25 +1,82 @@
 @import url('https://fonts.googleapis.com/css?family=Bangers');
 
 body {
-    
 }
+
+.menu{
+    position: absolute;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(153, 0, 153, 0.3);
+    font-family: "Bangers", serif;
+  }
+  
+  li {
+    float: left;
+    border-right: 1px solid #ffb3ff;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 134px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(70, 2, 70);
+  }
 
 h1 {
     font-size: 50pt;
     font-family: "Bangers", serif;
     text-align: center;
     color: #ff80ff;
-    position: fixed;
+    position: absolute;
+    top: 50px;
     left: 450px;
+}
+
+#mainText {
+
+    position: absolute;
+    color: #ffccff;
+    top: 300px;
+    left: 400px;
+    right: 400px;
+    font-size: 16pt;
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: rgba(128, 0, 128, 0.3);
+    border-style: solid;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
 }
 
 #stopwatch {
     color: #ffccff;
+    background-color: rgba(128, 0, 128, 0.3);
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-style: solid;
     font-size: 60px;
     text-align: center;
-    position: fixed;
+    position: absolute;
     left: 475px;
-    top: 100px;
+    top: 140px;
 }
 
 #purpleSeaVideo {
@@ -28,4 +85,34 @@ h1 {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+}
+
+#signUpButton {
+    position: absolute;
+    top: 550px;
+    left: 450px;
+    font-size: 22pt;
+    background-color: #ff80ff;
+    color: white;
+    border-style: solid;
+    font-family: "Bangers", serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+#logInButton {
+    position: absolute;
+    top: 550px;
+    left: 750px;
+    font-size: 22pt;
+    background-color: #ff80ff;
+    color: white;
+    border-style: solid;
+    font-family: "Bangers", serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 5px;
 }
