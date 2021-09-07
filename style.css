@@ -1,50 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Bangers');
 
-body {
-}
-
-.menu{
-    position: absolute;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(153, 0, 153, 0.3);
-    font-family: "Bangers", serif;
-  }
-  
-  li {
-    float: left;
-    border-right: 1px solid #ffb3ff;
-  }
-
-  li:last-child {
-    border-right: none;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 134px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: rgb(70, 2, 70);
-  }
-
 h1 {
     font-size: 50pt;
     font-family: "Bangers", serif;
     text-align: center;
     color: #ff80ff;
     position: absolute;
-    top: 50px;
-    left: 450px;
+    top: 3%;
+    left: 35%;
 }
 
 #mainText {
