@@ -184,27 +184,5 @@ h1 {
     #check:checked ~ ul{
         left: 0;
     }
-
-    /* h1 {
-        position: unset;
-        
-    }
-    
-    .stopWatch_Container{
-        position: unset;
-    }
-
-    .MainText_Container{
-        position: unset;
-    }
-
-    #signUpButton {
-        position: unset;
-    }
-    
-    #logInButton {
-        position: unset;
-    } */
-
     
 }
