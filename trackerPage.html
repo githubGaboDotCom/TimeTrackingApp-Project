@@ -6,7 +6,7 @@
         <meta name="viewport" content="width= device-width, initial-scale=1.0">
         <script type="text/javascript" src="stopwatchForMainPage.js"></script> 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body onload="stopwatch()">
         <video autoplay muted loop id="purpleSeaVideo">
@@ -14,6 +14,10 @@
         </video>
 
         <nav>
+            <input type="checkbox" onclick="button_checked()" id="check">
+            <label for="check" class="check_button_menu">
+                <i class="fa fa-bars"></i>
+            </label>
             <label class="App_Logo">Track Your time</label>
             <ul>
                 <li><a href="index.html">Home</a></li>

@@ -164,7 +164,9 @@ h1 {
         width: 100%;
         height: 100vh;
         background-color: #420242;
-        top: 80px;
+        top: 25px;
+        font-size: 45pt;
+        padding-top: 40px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -183,6 +185,7 @@ h1 {
 
     #check:checked ~ ul{
         left: 0;
+        z-index: 1;
     }
     
 }

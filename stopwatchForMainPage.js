@@ -34,19 +34,19 @@ function stopwatch() {
 }
 
 function button_checked(){
-    var checked = document.getElementById("check").checked;
-    if (checked){
-        document.querySelector("h1").style.position = "unset";
-        document.querySelector(".stopWatch_Container").style.position = "unset";
-        document.querySelector(".MainText_Container").style.position = "unset";
-        document.querySelector("#signUpButton").style.position = "unset";
-        document.querySelector("#logInButton").style.position = "unset";
-    }else{
-        document.querySelector("h1").style.position = "absolute";
-        document.querySelector(".stopWatch_Container").style.position = "absolute";
-        document.querySelector(".MainText_Container").style.position = "absolute";
-        document.querySelector("#signUpButton").style.position = "absolute";
-        document.querySelector("#logInButton").style.position = "absolute";
-    }
+    // var checked = document.getElementById("check").checked;
+    // if (checked){
+    //     document.querySelector("h1").style.position = "unset";
+    //     document.querySelector(".stopWatch_Container").style.position = "unset";
+    //     document.querySelector(".MainText_Container").style.position = "unset";
+    //     document.querySelector("#signUpButton").style.position = "unset";
+    //     document.querySelector("#logInButton").style.position = "unset";
+    // }else{
+    //     document.querySelector("h1").style.position = "absolute";
+    //     document.querySelector(".stopWatch_Container").style.position = "absolute";
+    //     document.querySelector(".MainText_Container").style.position = "absolute";
+    //     document.querySelector("#signUpButton").style.position = "absolute";
+    //     document.querySelector("#logInButton").style.position = "absolute";
+    // }
 
 }
