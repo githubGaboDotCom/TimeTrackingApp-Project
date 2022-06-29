@@ -27,7 +27,7 @@ nav ul {
     float: right;
     text-decoration: none;
     list-style: none;
-    margin-right: 30px;
+    margin-right: 20px;
     line-height: 20px;
     
 }
@@ -40,32 +40,28 @@ nav ul li a{
     font-family: "Bangers", serif;
     color: white;
     font-size: 20pt;
-    padding: 14px 50px;
+    padding: 14px 65px;
 }
 
 nav ul #straight_line {
     color: white;
     font-size: 20pt;
     padding-right: 5px;
-    padding-left: 5px;
 }
 
 nav ul li i {
     padding-right: 10px;
     color: white;
-    /* text-align: center; */
-    /* padding-top: 4px; */
-    /* padding-left: 8px; */
 }
 
 nav ul li #sign_in {
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 nav ul li #sign_up {
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 li a:hover:not(.active) {
@@ -351,7 +347,7 @@ h3 {
     }
 }
 
-@media (max-width: 1054px){
+@media (max-width: 1162px){
 
     .check_button_menu{
         display: block;
@@ -375,6 +371,10 @@ h3 {
         display: block;
         margin: 50px 0;
         line-height: 30px;
+    }
+
+    nav ul #straight_line {
+        display: none;
     }
 
     #check:checked ~ ul{
