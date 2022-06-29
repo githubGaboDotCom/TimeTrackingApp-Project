@@ -21,9 +21,10 @@
             <label class="App_Logo">Track Your time</label>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="instructions.html">Instructions</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="trackerPage.html">Sign In</a></li>
+                <li><a class="active" href="signUp.html">Sign Up</a></li>
             </ul>
         </nav>
 
@@ -34,8 +35,9 @@
                 <h3 id="SignUp_Title">Sign Up</h3>
                 <form action="#">
                     <h4 id="SignUp_h4">Please fill in this form to create an account!</h4>
+                    <hr>
                     <div class="Input_Field">
-                        <input type="text" placeholder="First Name">
+                        <input id="First_Name" type="text" placeholder="First Name">
                     </div>
                     <div class="Input_Field">
                         <input type="text" placeholder="Last Name">
@@ -49,9 +51,10 @@
                     <div class="Input_Field">
                         <input type="password" placeholder="Confirm Password">
                     </div>
-                    <div class="SignUp_Button">
-                        <input type="submit" value="Sign Up">
+                    <div class="Input_Field" id="remove_paddingBottom">
+                        <input type="submit" value="Sign Up" id="SignUp_Button">
                     </div>
+                    <p>Already have an account? <a id="Already_withAccount" href="trackerPage.html"><u>Login here</u></a></p>
                 </form>
 
             </div>
