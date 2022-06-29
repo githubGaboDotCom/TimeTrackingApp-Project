@@ -340,6 +340,42 @@ h3 {
     font-size: 19pt;
 }
 
+.Instructions_Box_Container {
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 180px;
+}
+
+.Instructions_Box {
+    width: 500px;
+    height: 600px;
+    color: #ffccff;
+    background-color: rgba(128, 0, 128, 0.3);
+    border-style: solid;
+    /* overflow-y: scroll; */
+    padding: 1px 15px;
+    
+}
+
+.Instructions_Box h2 {
+    color: #fda5fd;
+    text-decoration: underline;
+}
+
+.Instructions_Box h3 {
+    text-decoration: underline;
+    color: #fda5fd;
+    text-align: left;
+}
+
+.Instructions_Box p {
+    text-align: justify;
+    font-size: 13pt;
+
+}
+
 @media (max-width: 1258px) {
     nav ul li a{
         font-size: 16pt;
