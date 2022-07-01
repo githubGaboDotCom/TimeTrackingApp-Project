@@ -346,15 +346,16 @@ h3 {
     justify-content: center;
     display: flex;
     margin-top: 180px;
+    height: 450px;
 }
 
 .Instructions_Box {
     width: 500px;
-    height: 600px;
+    height: 420px;
     color: #ffccff;
     background-color: rgba(128, 0, 128, 0.3);
     border-style: solid;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
     padding: 1px 15px;
     
 }
