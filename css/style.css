@@ -206,8 +206,7 @@ h1 {
     color: #ffccff;
     border: solid;
     width: 850px;
-    display: flex;
-    
+    display: flex;    
 }
 
 #My_Picture {
@@ -371,6 +370,14 @@ form .Input_Field i {
 h3 {
     text-align: center;
     font-size: 19pt;
+}
+
+.About_paragraphs {
+    width: 100%;
+}
+
+.About_paragraphs h3 {
+    font-family: "Bangers", serif;
 }
 
 .Instructions_Box_Container {
