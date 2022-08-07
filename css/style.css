@@ -73,14 +73,13 @@ li a:hover:not(.active) {
 }
 
 .feedback_bar {
-    position: absolute;
+    width: 409px;
 }
 
 .feedback_bar #feedback_button {
-    font-size: 30pt;
+    font-size: 40px;
     height: 50px;
-    padding-left: 25px;
-    padding-right: 28px;
+    width: 50%;
     color: white;
     border-style: solid;
     font-family: "Bangers", serif;
@@ -88,16 +87,133 @@ li a:hover:not(.active) {
 }
 
 .feedback_bar #contactUs_button {
-    font-size: 30pt;
+    font-size: 40px;
     height: 50px;
-    padding-left: 23px;
-    padding-right: 23px;
+    width: 49%;
+    float: right;
     color: white;
     border-style: solid;
     font-family: "Bangers", serif;
     background-color: #420242;
 }
 
+.opinion_page {
+    width: 400px;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+}
+
+.opinion_page p {
+    margin-top: 25px;
+    font-size: 13pt;
+}
+
+.stars_rate {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.stars_rate input {
+    display: none;
+}
+
+.stars_rate label {
+    font-size: 40px;
+    color: rgb(126, 126, 2);
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.Feedback_Box .container {
+    /* display: flex;
+    align-items: center;
+    flex-direction: row-reverse; */
+}
+
+/* .stars_rate input:not(:checked) ~ label:hover ~ label */
+.stars_rate input:not(:checked) ~ label:hover, .stars_rate input:not(:checked) ~ label:hover ~ label {
+    color: yellow;
+} 
+
+/* .stars_rate:hover label {
+    color: yellow;
+}
+
+.stars_rate label:hover ~ label {
+    color:rgb(126, 126, 2)
+} */
+
+/* .stars_rate label:hover ~ label  {
+    color: yellow;
+} */
+
+
+/* .stars_rate input:checked ~ label {
+    color: yellow;
+} */
+
+.stars_rate header {
+    width: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.stars_rate input:not(:checked) ~ header::before {
+    content: "0 of 5";
+    color: white;
+}
+
+.stars_rate #star1:checked ~ header::before {
+    content: "1 of 5";
+    color: white;
+}
+
+.stars_rate #star2:checked ~ header::before {
+    content: "2 of 5";
+    color: white;
+}
+
+.stars_rate #star3:checked ~ header::before {
+    content: "3 of 5";
+    color: white;
+}
+
+.stars_rate #star4:checked ~ header::before {
+    content: "4 of 5";
+    color: white;
+}
+
+.stars_rate #star5:checked ~ header::before {
+    content: "5 of 5";
+    color: white;
+}
+
+.feedback_form {
+    margin-top: 15px;
+}
+
+.feedback_form textarea {
+    background-color: rgba(5, 0, 5, 0.3);
+    color: white;
+}
+
+.submit_button {
+    text-align: center;
+}
+
+.submit_button input {
+    font-size: 25pt;
+    padding: 8px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: white;
+    border-style: solid;
+    font-family: "Bangers", serif;
+    background-color: #420242;
+}
 
 h1 {
     font-size: 50pt;
@@ -245,11 +361,12 @@ h1 {
 }
 
 .About_Container .Feedback_Box {
-    width: 430px;
+    width: 458px;
     height: 574px;
     border: solid;
     background-color: rgba(128, 0, 128, 0.3);
     color: #ffccff;
+    overflow-y: scroll;
     margin-left: 15px;
 }
 
@@ -259,22 +376,19 @@ h1 {
     border-bottom:#ffccff solid 1.5px;
     padding-top: 10px;
     background-color: rgba(5, 0, 5, 0.3);
+    display: flex;
 
-}
-
-.feedback_form {
-    padding-left: 0px;
 }
 
 .Feedback_Box h3 {
     font-family: "Bangers", serif;
+    padding-left: 10px;
     animation-name: shaking;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
 #hand_icon {
-    position: absolute;
     margin-top: 20px;
     margin-left: 75px;
     font-size: 35px;
