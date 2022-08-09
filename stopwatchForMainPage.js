@@ -32,3 +32,17 @@ function stopwatch() {
 
     } ,1000);
 }
+
+function switch_feedbackTab_to_contactusTab() {
+    document.getElementById("feedback_tab_container").style.display = "none";
+    document.getElementById("contactUs_tab_container").style.display = "block";
+    document.querySelector(".submit_contactus_button").style.display = "block";
+    
+}
+
+function switch_contactusTab_to_feedbackTab() {
+    document.getElementById("feedback_tab_container").style.display = "block";
+    document.getElementById("contactUs_tab_container").style.display = "none";
+    document.querySelector(".submit_contactus_button").style.display = "none";
+    
+}

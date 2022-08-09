@@ -59,39 +59,56 @@
                         <h3>Help us improve!</h3>
                     </div>
                     <div class="feedback_bar">
-                        <button id="feedback_button" onclick="">Feedback</button>
-                        <button id="contactUs_button" onclick="">Contact Us</button>
+                        <button id="feedback_button" onclick="switch_contactusTab_to_feedbackTab()">Feedback</button>
+                        <button id="contactUs_button" onclick="switch_feedbackTab_to_contactusTab()">Contact Us</button>
                     </div>
-                    <div class="opinion_page">
-                        <p>What is your opinion of this page?</p>
+                    <div id="feedback_tab_container">
+                        <div class="opinion_page">
+                            <p>What is your opinion of this page?</p>
+                        </div>
+                        <div class="container">
+                            <div class="stars_rate">
+                                <input type="radio" name="rate" id="star5">
+                                <label for="star5" class="fa fa-star"></label>
+                                <input type="radio" name="rate" id="star4">
+                                <label for="star4" class="fa fa-star"></label>
+                                <input type="radio" name="rate" id="star3">
+                                <label for="star3" class="fa fa-star"></label>
+                                <input type="radio" name="rate" id="star2">
+                                <label for="star2" class="fa fa-star"></label>
+                                <input type="radio" name="rate" id="star1">
+                                <label for="star1" class="fa fa-star"></label>
+                                <header></header>
+                            </div>                       
+                        </div>
+                        <form class="feedback_form" action="Feedback_Form">
+                            <p><label for="how_often">How often do you use our app?</label></p>
+                            <textarea id="how_often_text" cols="40" rows="1"></textarea>  
+                            <p><label for="what_reason">What was the reason for your visit?</label></p>
+                            <textarea id="what_reason_text" cols="40" rows="2"></textarea>
+                            <p><label for="what_improved">What would you like to see improved the most?</label></p>
+                            <textarea id="what_improved_text" cols="40" rows="2"></textarea>
+                            <p><label for="any_suggestions">Do you have any suggestions to make our website better?</label></p>
+                            <textarea id="any_suggestions_text" cols="40" rows="4"></textarea>
+                        </form>
+                        <div class="submit_button">
+                            <input type="submit" value="submit">
+                        </div>
                     </div>
-                    <div class="container">
-                        <div class="stars_rate">
-                            <input type="radio" name="rate" id="star5">
-                            <label for="star5" class="fa fa-star"></label>
-                            <input type="radio" name="rate" id="star4">
-                            <label for="star4" class="fa fa-star"></label>
-                            <input type="radio" name="rate" id="star3">
-                            <label for="star3" class="fa fa-star"></label>
-                            <input type="radio" name="rate" id="star2">
-                            <label for="star2" class="fa fa-star"></label>
-                            <input type="radio" name="rate" id="star1">
-                            <label for="star1" class="fa fa-star"></label>
-                            <header></header>
-                        </div>                       
-                    </div>
-                    <form class="feedback_form" action="Feedback_Form">
-                        <p><label for="how_often">How often do you use our app?</label></p>
-                        <textarea id="how_often_text" cols="40" rows="1"></textarea>  
-                        <p><label for="what_reason">What was the reason for your visit?</label></p>
-                        <textarea id="what_reason_text" cols="40" rows="2"></textarea>
-                        <p><label for="what_improved">What would you like to see improved the most?</label></p>
-                        <textarea id="what_improved_text" cols="40" rows="2"></textarea>
-                        <p><label for="any_suggestions">Do you have any suggestions to make our website better?</label></p>
-                        <textarea id="any_suggestions_text" cols="40" rows="4"></textarea>
-                    </form>
-                    <div class="submit_button">
-                        <input type="submit" value="submit">
+                    <div id="contactUs_tab_container">
+                        <h2>How Can We help?</h2>
+                        <form action="">
+                                <p><label for="full_name">Full Name:</label></p>
+                                <input type="text">
+                                <p><label for="contact_email">Email:</label></p>
+                                <input type="email">
+                                <p><label for="contact_message">Message:</label></p>
+                                <textarea id="contact_message" cols="50" rows="5"></textarea>
+                            </div>
+                        </form>
+                        <div class="submit_contactus_button">
+                            <input type="submit" value="submit">
+                        </div>
                     </div>
             </div>
         </div>

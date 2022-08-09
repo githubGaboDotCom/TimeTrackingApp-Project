@@ -84,6 +84,7 @@ li a:hover:not(.active) {
     border-style: solid;
     font-family: "Bangers", serif;
     background-color: #420242; 
+    cursor: pointer;
 }
 
 .feedback_bar #contactUs_button {
@@ -95,6 +96,7 @@ li a:hover:not(.active) {
     border-style: solid;
     font-family: "Bangers", serif;
     background-color: #420242;
+    cursor: pointer;
 }
 
 .opinion_page {
@@ -200,6 +202,7 @@ li a:hover:not(.active) {
     border-style: solid;
     font-family: "Bangers", serif;
     background-color: #420242;
+    cursor: pointer;
 }
 
 h1 {
@@ -326,7 +329,6 @@ h1 {
     position: absolute;
     width: 100%;
     height: 595px;
-    display: inline-block;
     display: flex;
 }
 
@@ -395,6 +397,53 @@ h1 {
     50% { transform: translateX(8px) }
     100% { transform: translateX(0) }
 }
+
+#contactUs_tab_container {
+    margin-top: 30px;
+    display: none;
+}
+
+#contactUs_tab_container h2 {
+    font-size: 22pt;
+    margin-bottom: 18px;
+    text-align: center;
+    font-family: "Bangers", serif;
+}
+
+#contactUs_tab_container form p label {
+    font-size: 12pt;
+}
+
+#contactUs_tab_container form input {
+    height: 25px;
+    width: 80%;
+    padding-top: 9px;
+    background-color: rgba(5, 0, 5, 0.3);
+    color: aliceblue
+}
+
+#contactUs_tab_container #contact_message {
+    background-color: rgba(5, 0, 5, 0.3);
+    color: aliceblue;
+}
+
+.submit_contactus_button {
+    display: none;
+    text-align: center;
+}
+
+.submit_contactus_button input {
+    font-size: 25pt;
+    padding: 8px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: white;
+    border-style: solid;
+    font-family: "Bangers", serif;
+    background-color: #420242;
+    cursor: pointer;
+}
+
 
 .Login_Icon_Container {
     width: 100%;
@@ -645,4 +694,26 @@ h3 {
         z-index: 1;
     }
     
+}
+
+@media (max-width: 1326px) {
+    .About_Container .About_Me {
+        overflow-y: scroll;  
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+}
+
+@media (max-width: 1232px) {
+    .About_Container {
+        display: block;
+        height: 1200px;
+    } 
+
+    .About_Container .Feedback_Box {    
+        margin-top: 25px;
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+   
 }
