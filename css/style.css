@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Bangers');
 
+/*Section: Navigation Bar - CSS code for the navigation bar in all the pages 
+that includes tabs to navigate through the pages of the Time Tracking 
+App. I will label it as */
+
+/*Section begins*/
+
 nav {
     position: absolute;
     margin: 0; 
@@ -12,7 +18,6 @@ nav {
     height: 55px;
 
 }
-
 
 .App_Logo{
     color: whitesmoke;
@@ -71,6 +76,10 @@ li a:hover:not(.active) {
 .active {
     background-color: #420242;
 }
+
+/*Section ends*/
+
+/*Section: about.html CSS code - */
 
 .feedback_bar {
     width: 100%
