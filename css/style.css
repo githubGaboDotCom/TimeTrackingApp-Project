@@ -85,6 +85,21 @@ li a:hover:not(.active) {
     min-height: 100%;
 }
 
+.check_button_menu {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 55px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
 /*Section ends*/
 
 /*Section: about.html CSS code - */
@@ -107,6 +122,27 @@ li a:hover:not(.active) {
     width: 850px;
     height: 555px;
     display: flex;    
+}
+
+.About_paragraphs {
+    width: 100%;
+}
+
+.About_paragraphs h3 {
+    font-family: "Bangers", serif;
+}
+
+.About_paragraphs blockquote {
+    text-align: center;
+    font-size: 15pt;
+    margin-bottom: 0%;
+}
+
+.About_paragraphs p {
+    text-align: justify;
+    font-size: 12.5pt;
+    padding: 15px;
+    margin-top: 0%;
 }
 
 #My_Picture {
@@ -410,10 +446,6 @@ h1 {
     
 }
 
-#remove_paddingBottom {
-    padding-bottom: 0%;
-}
-
 #signUpButton {
     position: absolute;
     top: 550px;
@@ -446,18 +478,28 @@ h1 {
     cursor: pointer;
 }
 
-.check_button_menu {
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 55px;
-    margin-right: 30px;
-    cursor: pointer;
-    display: none;
+/*Section ends*/
+
+/*Section: trackerPage.html CSS code - */
+/*Section starts*/
+
+.Login_Box_Container {
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    margin-top: 226px;
 }
 
-#check {
-    display: none;
+.Login_Box {
+    width: 350px;
+    height: 325px;
+    margin-left: 1%;
+    padding-top: 35px;
+    background-color: rgba(32, 1, 32, 0.3);
+    color: white;
+    border-radius: 5px;
 }
 
 .Login_Icon_Container {
@@ -484,14 +526,41 @@ h1 {
 
 }
 
-.Login_Box_Container {
-    width: 100%;
-    height: 350px;
-    justify-content: center;
-    display: flex;
-    position: absolute;
-    margin-top: 226px;
+form .Input_Field .Login_Button {
+    font-size: 18pt;
+    padding-top: 0%;
+    width: 100px;
+    margin-left: 100px;
+    height: 50px;
+    color: white;
+    border-style: solid;
+    font-family: "Bangers", serif;
+    background-color: #420242;
 }
+
+form .Input_Field .Forgot_Password {
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
+form .Input_Field .Forgot_Password #Forgot {
+    color: white;
+}
+
+form .Input_Field i {
+    font-size: 28px;
+    padding-right: 10px;
+    background-color: #420242;
+    height: 35px;
+    text-align: center;
+    padding-top: 4px;
+    padding-left: 8px;
+}
+
+/*Section ends*/
+
+/*Section: signUp.html CSS code - */
+/*Section starts*/
 
 .Sign_Up_Box_Container {
     width: 100%;
@@ -537,16 +606,6 @@ form p {
     color: white;
 }
 
-.Login_Box {
-    width: 350px;
-    height: 325px;
-    margin-left: 1%;
-    padding-top: 35px;
-    background-color: rgba(32, 1, 32, 0.3);
-    color: white;
-    border-radius: 5px;
-}
-
 form {
     padding-left: 20px;
 }
@@ -569,39 +628,12 @@ form #Password_Id {
     padding-bottom: 0%;
 }
 
-form .Input_Field .Login_Button {
-    font-size: 18pt;
-    padding-top: 0%;
-    width: 100px;
-    margin-left: 100px;
-    height: 50px;
-    color: white;
-    border-style: solid;
-    font-family: "Bangers", serif;
-    background-color: #420242;
-}
-
-form .Input_Field .Forgot_Password {
-    padding-top: 12px;
-    padding-bottom: 20px;
-}
-
-form .Input_Field .Forgot_Password #Forgot {
-    color: white;
+#remove_paddingBottom {
+    padding-bottom: 0%;
 }
 
 ::placeholder {
     color: aliceblue;
-}
-
-form .Input_Field i {
-    font-size: 28px;
-    padding-right: 10px;
-    background-color: #420242;
-    height: 35px;
-    text-align: center;
-    padding-top: 4px;
-    padding-left: 8px;
 }
 
 h3 {
@@ -609,26 +641,11 @@ h3 {
     font-size: 19pt;
 }
 
-.About_paragraphs {
-    width: 100%;
-}
+/*Section ends*/
 
-.About_paragraphs h3 {
-    font-family: "Bangers", serif;
-}
+/*Section: instructions.html CSS code - */
+/*Section starts*/
 
-.About_paragraphs blockquote {
-    text-align: center;
-    font-size: 15pt;
-    margin-bottom: 0%;
-}
-
-.About_paragraphs p {
-    text-align: justify;
-    font-size: 12.5pt;
-    padding: 15px;
-    margin-top: 0%;
-}
 
 .Instructions_Box_Container {
     position: absolute;
@@ -666,6 +683,8 @@ h3 {
     font-size: 13pt;
 
 }
+
+/*Section ends*/
 
 @media (max-width: 1258px) {
     nav ul li a{
